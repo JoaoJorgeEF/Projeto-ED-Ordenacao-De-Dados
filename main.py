@@ -60,9 +60,9 @@ def particao(lista, anterior, posterior):
 
 def QuickSort(lista, anterior, posterior):
     if anterior < posterior:
-        pi = particao(lista, anterior, posterior)
-        QuickSort(lista, anterior, pi - 1)
-        QuickSort(lista, pi + 1, posterior)
+        pivoIndice = particao(lista, anterior, posterior)
+        QuickSort(lista, anterior, pivoIndice - 1)
+        QuickSort(lista, pivoIndice + 1, posterior)
 
     return lista
 
